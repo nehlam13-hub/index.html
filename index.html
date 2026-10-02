@@ -1,4 +1,4 @@
-1pQl2KPoeRtvHTb7Nq_W1XTdeREXi0va6<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Nehla Mohammed — Architecture & Interior Design</title>
@@ -65,12 +65,41 @@ clip-path:polygon(0 0,calc(100% - 44px) 0,100% 44px,100% 100%,0 100%);border:0}
 .contact p{margin:10px 0}
 footer{padding:30px 8% 50px;font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--mute);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-top:1px solid var(--line);margin:0 8%;padding-left:0;padding-right:0}
 @media(max-width:800px){.hero,.two{grid-template-columns:1fr}.cut{aspect-ratio:4/3}.grid{grid-template-columns:1fr}.grid.g2{grid-template-columns:1fr}nav a{margin-left:14px}nav{padding:22px 6%}}
+
+.cut img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cut::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,transparent 55%,rgba(40,28,20,.45))}
+.cut span{z-index:2}.cut::after{z-index:2}
+body{font-size:19px}
+nav{font-size:13px}.kicker,.lab,.meta,.hint{font-size:13px}
+.sub{font-size:20px;max-width:480px}
+.two p{font-size:19px}
+.tags span{font-size:15px}.edu{font-size:30px}.edu small{font-size:16px}
+.fig figcaption{font-size:13px}
+.sublab{font-size:32px}
+.card h3{font-size:14px}
+.intro p{font-size:clamp(26px,3vw,40px)}
+.grid,.grid.g2{grid-template-columns:repeat(2,1fr);gap:30px}
+.grid.g1{grid-template-columns:1fr}
+.grid .fig.lead{grid-column:1/-1}
+.ph,.ph.plan{aspect-ratio:16/10}
+.ph.ok,.ph.plan.ok{aspect-ratio:auto}
+.ph.ok img{position:static;width:100%;height:auto;object-fit:contain;display:block}
+.ph.ok i{display:none}
+.row{align-items:flex-start}
+h2{font-size:clamp(38px,5.4vw,76px)}
+.ph-head h3{font-size:clamp(34px,4.6vw,62px)}
+.meta,.fig figcaption{letter-spacing:.18em}
+.contact a{font-size:clamp(26px,4vw,52px)}
+footer{font-size:13px}
+.row .fig{flex:0 0 min(88vw,860px)}
+.cut{aspect-ratio:4/5}
+@media(max-width:800px){body{font-size:18px}.grid,.grid.g2{grid-template-columns:1fr}.cut{aspect-ratio:4/3}}
 </style></head><body>
 <header><nav><b>N. Mohammed</b><div><a href="#about">About</a><a href="#works">Works</a><a href="#contact">Contact</a></div></nav>
 <div class="hero"><div><div class="kicker">Architecture · Interior Design · Visualization</div>
 <h1>Nehla<br><i>Mohammed</i></h1>
 <p class="sub">Architecture student at Adama Science and Technology University — shaping calm, functional and visually considered spaces.</p></div>
-<div class="cut"><span>Portfolio 2024 — 2026</span></div></div></header>
+<div class="cut"><img src="https://drive.google.com/thumbnail?id=11ew0tbGSr_g0aofTjJHkGDtyE7Xu9_s_&sz=w2000" alt="Featured architectural work" referrerpolicy="no-referrer" onerror="this.remove()"><span>Portfolio 2024 — 2026</span></div></div></header>
 <main>
 <section class="intro"><div class="lab">Introduction</div>
 <p>I transform ideas, site conditions, and client needs into meaningful spaces through thoughtful design. My work spans spatial concepts, construction documentation, branding, graphic design, and architectural visualization. This portfolio showcases my skills, design approach, and selected works.</p></section>
@@ -91,7 +120,7 @@ footer{padding:30px 8% 50px;font-size:11px;letter-spacing:.26em;text-transform:u
 <div class="sublab">Dining &amp; open kitchen</div><div class="grid" id="p-din"></div>
 <div class="sublab">Master bedroom &amp; master bathroom</div><div class="grid g2" id="p-mas"></div></div>
 
-<div class="proj"><div class="ph-head"><h3><em>02</em> Mixed-use apartment reception</h3><div class="meta">Interior design</div></div><div class="grid g1" id="p-rec"></div></div>
+<div class="proj"><div class="ph-head"><h3><em>02</em> Mixed-use apartment reception</h3><div class="meta">Interior design</div></div><div class="grid" id="p-rec"></div></div>
 
 <div class="proj"><div class="ph-head"><h3><em>03</em> Kids’ shop</h3><div class="meta">Commercial interior · Renders</div></div><div class="hint">Scroll → </div><div class="row" id="p-kid"></div></div>
 
@@ -109,16 +138,14 @@ const T=id=>'https://drive.google.com/thumbnail?id='+id+'&sz=w2000'; // needs ea
 const IMG={};
 const S={
 'p-ext':[['1q55vXIJ1lbb9hoVwRQdVZw9McuZWqDSW','Exterior view']],
-'p-plan':[['1Os8ktFhc9OFk8_MmrafDojmO5h1Ola0r','Floor plan'],
-['1mb6ahV87vzFgzpeMedhwIs5lrh1w_NHS','Floor plan'],
-['1x-ODGmkRfaOm1yZlnzPCzzyHYXyzftK3','Floor plan']],
+'p-plan':[['1qSGgsTHT3DkkVaO5-cxeQTSjEKYh_QP2','Ground floor plan'],['14YO3oky2w3-NE19uMOKjZ-GW6zuJEPtr','First floor plan'],['1Y8cdjSEEd0lOEMbQHs_q6PTtsQWrK-LK','Second floor plan']],
 'p-liv':[['1JRxRwDOLYJ2iVAuoFPJt7UwoGriAyiyK','Living room'],['1aPwA9k21LgSvdx98dj7BTm6wlu4AhwfN','Living room'],['1ojcXU5krNLW9XILttOa0vJA7R6grvGmF','Living room']],
-'p-din':[['10jlvidNM8iuhAqKnYX6dOg5KoUPrnVss','Dining'],['1_3G9WQhlMB5FHvz-orQ71AALe4a20l9gA','Open kitchen'],['1s7gcg_nsmNYTm8_D9VaoqQQSf780pn2o','Dining & kitchen']],
+'p-din':[['10jlvidNM8iuhAqKnYX6dOg5KoUPrnVss','Dining'],['1_3G9WQhlMB5FHvz-orQ71AALe4a20l9A','Open kitchen'],['1s7gcg_nsmNYTm8_D9VaoqQQSf780pn2o','Dining & kitchen']],
 'p-mas':[['1sYtsFWYD-simeWlX652mT3_QJzvfYabP','Master bedroom'],['1ve_TrvczqyGf-ndCjbJyoqJqyMvVqFhq','Master bathroom']],
-'p-rec':[['17Vlw7-MhmEU7SxC03cMs3ELOYVV7y4cW','Reception']],
+'p-rec':[['1-nPSPndPf0TxMHoh-pLdm9Gpeu_DqqIg','Reception'],['1pQl2KPoeRtvHTb7Nq_W1XTdeREXi0va6','Reception']],
 'p-kid':[['159DLWG37ViyVAMht_sz6oKvOSsphih_P'],['1cGgDFjZVSaYn8SA9-9Z6m2TI3_yP54Zg'],['1in5G7ydIjswjG5XbRsz_dRvGEI5warxk'],['1qF72DlnO7OFf02A6C2gjzfbCi32jbZrr'],['1zGJBYqIxORte3VISTQaSCmni4v8w9Q3t']].map((x,i)=>[x[0],'Kids’ shop — render '+(i+1)]),
 'p-twin':[['136CqXBV8E4rugSc5BIRVmFrE3mgK3Hkq','Twin bedroom'],['1elb4KFYnf0Kb7DCEZ38udAOu5Kr8vVNW','Twin bedroom']]};
 for(const k in S){const el=document.getElementById(k);const plan=k==='p-plan';
-el.innerHTML=S[k].map(([id,c],i)=>{const src=IMG[id]||T(id);
-return `<figure class="fig"><div class="ph${plan?' plan':''}"><i>${c}</i><img src="${src}" alt="${c}" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()"></div><figcaption><span>${String(i+1).padStart(2,'0')} — ${c}</span></figcaption></figure>`}).join('')}
+const odd=S[k].length%2===1&&S[k].length>1&&!el.classList.contains('g1');el.innerHTML=S[k].map(([id,c],i)=>{const src=IMG[id]||T(id);
+return `<figure class="fig${odd&&i===0?' lead':''}"><div class="ph${plan?' plan':''}"><i>${c}</i><img src="${src}" alt="${c}" loading="lazy" referrerpolicy="no-referrer" onload="this.parentNode.classList.add('ok')" onerror="this.remove()"></div><figcaption><span>${String(i+1).padStart(2,'0')} — ${c}</span></figcaption></figure>`}).join('')}
 </script></body></html>
