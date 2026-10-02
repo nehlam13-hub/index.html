@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nehla Mohammed — Architecture & Interior Design</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@300;400;500&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#efe6d8;--bg2:#e4d6c1;--ink:#3b2a20;--mute:#7d6a5a;--brown:#8a6446;--line:rgba(122,90,67,.35);--glass:rgba(255,250,240,.45);
+--serif:'Cormorant Garamond',Georgia,serif;--sans:'Jost','Helvetica Neue',Arial,sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1d1814;--bg2:#2a221b;--ink:#eadfce;--mute:#a8957f;--brown:#c49a72;--line:rgba(196,154,114,.3);--glass:rgba(60,48,38,.5)}}
+:root[data-theme="dark"]{--bg:#1d1814;--bg2:#2a221b;--ink:#eadfce;--mute:#a8957f;--brown:#c49a72;--line:rgba(196,154,114,.3);--glass:rgba(60,48,38,.5)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--ink);font:300 16px/1.8 var(--sans);overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+background:linear-gradient(var(--line),var(--line)) 8% 0/1px 100% no-repeat,linear-gradient(var(--line),var(--line)) 50% 0/1px 100% no-repeat,linear-gradient(var(--line),var(--line)) 92% 0/1px 100% no-repeat;opacity:.7}
+main,header,footer{position:relative;z-index:1}
+nav{display:flex;justify-content:space-between;align-items:center;padding:28px 8%;font-size:11px;letter-spacing:.28em;text-transform:uppercase}
+nav a{color:var(--ink);text-decoration:none;margin-left:28px}nav a:hover{color:var(--brown)}
+nav b{font-weight:400}
+.hero{min-height:88vh;padding:6vh 8% 8vh;display:grid;grid-template-columns:1.1fr .9fr;gap:6%;align-items:end}
+.kicker{font-size:11px;letter-spacing:.34em;text-transform:uppercase;color:var(--brown)}
+h1{font:300 clamp(56px,10vw,140px)/.92 var(--serif);letter-spacing:-.02em;margin:22px 0 28px}
+h1 i{font-weight:300;color:var(--brown)}
+.sub{max-width:420px;color:var(--mute)}
+.cut{position:relative;aspect-ratio:3/4;clip-path:polygon(22% 0,100% 0,100% 100%,0 100%,0 22%);
+background:linear-gradient(135deg,rgba(138,100,70,.55),rgba(214,194,166,.7) 55%,rgba(255,248,235,.5)),repeating-linear-gradient(90deg,transparent 0 38px,rgba(255,255,255,.18) 38px 39px)}
+.cut::after{content:"";position:absolute;inset:14% 12% 10% 18%;border:1px solid rgba(255,255,255,.5);clip-path:polygon(30% 0,100% 0,100% 100%,0 100%,0 30%)}
+.cut span{position:absolute;left:8%;bottom:6%;font:italic 300 22px var(--serif);color:#fffaf0}
+section{padding:12vh 8%;position:relative}
+.lab{font-size:11px;letter-spacing:.34em;text-transform:uppercase;color:var(--brown);display:flex;gap:16px;align-items:center;margin-bottom:34px}
+.lab::before{content:"";width:46px;height:1px;background:var(--brown)}
+h2{font:300 clamp(34px,5vw,64px)/1.1 var(--serif);max-width:900px}
+h2 em{color:var(--brown)}
+.intro p{font:300 clamp(22px,2.6vw,34px)/1.5 var(--serif);max-width:860px;margin-left:auto}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:8%}
+.two p{color:var(--mute);margin-top:22px}
+.card{background:var(--glass);backdrop-filter:blur(8px);border:1px solid var(--line);padding:34px;margin-top:22px}
+.card h3{font:400 13px var(--sans);letter-spacing:.28em;text-transform:uppercase;color:var(--brown);margin-bottom:14px}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tags span{border:1px solid var(--line);padding:5px 14px;font-size:13px;letter-spacing:.06em}
+.edu{font:300 24px/1.3 var(--serif)}.edu small{display:block;font:300 13px var(--sans);color:var(--mute);margin-top:6px}
+.works{background:linear-gradient(180deg,transparent,var(--bg2) 12%,var(--bg2) 88%,transparent)}
+.proj{margin-top:12vh}
+.ph-head{display:flex;justify-content:space-between;align-items:baseline;gap:20px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:22px;margin-bottom:34px}
+.ph-head h3{font:300 clamp(30px,4vw,52px)/1.1 var(--serif)}.ph-head h3 em{color:var(--brown)}
+.meta{font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--mute)}
+.sublab{font:italic 300 24px var(--serif);color:var(--brown);margin:64px 0 18px}
+.fig{position:relative}
+.ph{position:relative;overflow:hidden;background:center/cover;aspect-ratio:16/10;
+background-image:linear-gradient(120deg,rgba(138,100,70,.35),rgba(255,248,235,.35)),repeating-linear-gradient(45deg,transparent 0 22px,rgba(138,100,70,.07) 22px 23px);
+clip-path:polygon(0 0,calc(100% - 44px) 0,100% 44px,100% 100%,0 100%);border:0}
+.ph.plan{aspect-ratio:4/3}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}.ph.plan img{object-fit:contain;background:var(--glass)}.ph i{position:absolute;left:18px;top:14px;font:italic 300 15px var(--serif);color:var(--mute)}
+.fig figcaption{display:flex;justify-content:space-between;font-size:11px;letter-spacing:.2em;text-transform:uppercase;margin-top:12px;color:var(--mute)}
+.fig a{color:var(--brown);text-decoration:none}
+.row{display:flex;gap:26px;overflow-x:auto;padding-bottom:18px;scroll-snap-type:x mandatory;scrollbar-width:thin;scrollbar-color:var(--brown) transparent}
+.row .fig{flex:0 0 min(78vw,640px);scroll-snap-align:start}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.grid.g2{grid-template-columns:repeat(2,1fr)}.grid.g1{grid-template-columns:1fr}
+.hint{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--mute);margin-bottom:12px}
+.contact{text-align:left}
+.contact a{color:var(--ink);text-decoration:none;font:300 clamp(24px,3.6vw,46px)/1.4 var(--serif);border-bottom:1px solid var(--line)}
+.contact a:hover{color:var(--brown)}
+.contact p{margin:10px 0}
+footer{padding:30px 8% 50px;font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--mute);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-top:1px solid var(--line);margin:0 8%;padding-left:0;padding-right:0}
+@media(max-width:800px){.hero,.two{grid-template-columns:1fr}.cut{aspect-ratio:4/3}.grid{grid-template-columns:1fr}.grid.g2{grid-template-columns:1fr}nav a{margin-left:14px}nav{padding:22px 6%}}
+
+.cut img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cut::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,transparent 55%,rgba(40,28,20,.45))}
+.cut span{z-index:2}.cut::after{z-index:2}
+body{font-size:19px}
+nav{font-size:13px}.kicker,.lab,.meta,.hint{font-size:13px}
+.sub{font-size:20px;max-width:480px}
+.two p{font-size:19px}
+.tags span{font-size:15px}.edu{font-size:30px}.edu small{font-size:16px}
+.fig figcaption{font-size:13px}
+.sublab{font-size:32px}
+.card h3{font-size:14px}
+.intro p{font-size:clamp(26px,3vw,40px)}
+.grid,.grid.g2{grid-template-columns:repeat(2,1fr);gap:30px}
+.grid.g1{grid-template-columns:1fr}
+.grid .fig.lead{grid-column:1/-1}
+.ph,.ph.plan{aspect-ratio:16/10}
+.ph.ok,.ph.plan.ok{aspect-ratio:auto}
+.ph.ok img{position:static;width:100%;height:auto;object-fit:contain;display:block}
+.ph.ok i{display:none}
+.row{align-items:flex-start}
+h2{font-size:clamp(38px,5.4vw,76px)}
+.ph-head h3{font-size:clamp(34px,4.6vw,62px)}
+.meta,.fig figcaption{letter-spacing:.18em}
+.contact a{font-size:clamp(26px,4vw,52px)}
+footer{font-size:13px}
+.row .fig{flex:0 0 min(88vw,860px)}
+.cut{aspect-ratio:4/5}
+@media(max-width:800px){body{font-size:18px}.grid,.grid.g2{grid-template-columns:1fr}.cut{aspect-ratio:4/3}}
+</style></head><body>
+<header><nav><b>N. Mohammed</b><div><a href="#about">About</a><a href="#works">Works</a><a href="#contact">Contact</a></div></nav>
+<div class="hero"><div><div class="kicker">Architecture · Interior Design · Visualization</div>
+<h1>Nehla<br><i>Mohammed</i></h1>
+<p class="sub">Architecture student at Adama Science and Technology University — shaping calm, functional and visually considered spaces.</p></div>
+<div class="cut"><img src="https://drive.google.com/thumbnail?id=11ew0tbGSr_g0aofTjJHkGDtyE7Xu9_s_&sz=w2000" alt="Featured architectural work" referrerpolicy="no-referrer" onerror="this.remove()"><span>Portfolio 2024 — 2026</span></div></div></header>
+<main>
+<section class="intro"><div class="lab">Introduction</div>
+<p>I transform ideas, site conditions, and client needs into meaningful spaces through thoughtful design. My work spans spatial concepts, construction documentation, branding, graphic design, and architectural visualization. This portfolio showcases my skills, design approach, and selected works.</p></section>
+<section id="about"><div class="lab">Design thinking, drawn and rendered</div>
+<div class="two"><div><h2>Spaces that are <em>functional,</em> thoughtful &amp; visually engaging.</h2>
+<p>I am an architecture student at Adama Science and Technology University, with an interest in creating functional, thoughtful, and visually engaging spaces. My experience and interests span architectural design, interior design, residential projects, space planning, and architectural visualization.</p>
+<p>I work with Revit, AutoCAD, SketchUp, D5 Render, Adobe Photoshop, Illustrator, and Microsoft Excel, using these tools to develop, document, and communicate design ideas. I am currently seeking opportunities to expand my practical experience, contribute to creative projects, and grow professionally in both architecture and interior design.</p></div>
+<div><div class="card"><h3>Education</h3><div class="edu">Bachelor of Architecture<small>In progress — Adama Science and Technology University</small></div></div>
+<div class="card"><h3>Software</h3><div class="tags"><span>Revit</span><span>AutoCAD</span><span>SketchUp</span><span>D5 Render</span><span>Blender</span><span>Photoshop</span><span>Illustrator</span><span>Excel</span></div></div></div></div></section>
+
+<section id="works" class="works"><div class="lab">Selected Works | 2024–2026</div>
+<h2>Residential, commercial &amp; <em>interior</em> studies.</h2>
+
+<div class="proj"><div class="ph-head"><h3><em>01</em> Residence, Mizan Tepi</h3><div class="meta">Residential · Currently under construction</div></div>
+<div class="grid g1" id="p-ext"></div>
+<div class="sublab">Floor plans</div><div class="hint">Scroll → </div><div class="row" id="p-plan"></div>
+<div class="sublab">Living room</div><div class="grid" id="p-liv"></div>
+<div class="sublab">Dining &amp; open kitchen</div><div class="grid" id="p-din"></div>
+<div class="sublab">Master bedroom &amp; master bathroom</div><div class="grid g2" id="p-mas"></div></div>
+
+<div class="proj"><div class="ph-head"><h3><em>02</em> Mixed-use apartment reception</h3><div class="meta">Interior design</div></div><div class="grid" id="p-rec"></div></div>
+
+<div class="proj"><div class="ph-head"><h3><em>03</em> Kids’ shop</h3><div class="meta">Commercial interior · Renders</div></div><div class="hint">Scroll → </div><div class="row" id="p-kid"></div></div>
+
+<div class="proj"><div class="ph-head"><h3><em>04</em> Twin bedroom</h3><div class="meta">Interior design</div></div><div class="grid g2" id="p-twin"></div></div>
+</section>
+
+<section id="contact" class="contact"><div class="lab">Contact</div><h2>Let’s build something <em>considered.</em></h2>
+<p style="margin-top:40px"><a href="mailto:nehlamohammed4@gmail.com">nehlamohammed4@gmail.com</a></p>
+<p><a href="tel:+251944800907">+251 944 800 907</a></p></section>
+</main>
+<footer><span>Nehla Mohammed</span><span>Architecture &amp; Interior Design · 2026</span></footer>
+<script>
+const T=id=>'https://drive.google.com/thumbnail?id='+id+'&sz=w2000'; // needs each Drive file shared as 'Anyone with the link'
+// To show real images, add entries like: IMG['FILE_ID']='https://your-host/image.jpg' (or a data: URI)
+const IMG={};
+const S={
+'p-ext':[['1q55vXIJ1lbb9hoVwRQdVZw9McuZWqDSW','Exterior view']],
+'p-plan':[['1qSGgsTHT3DkkVaO5-cxeQTSjEKYh_QP2','Ground floor plan'],['14YO3oky2w3-NE19uMOKjZ-GW6zuJEPtr','First floor plan'],['1Y8cdjSEEd0lOEMbQHs_q6PTtsQWrK-LK','Second floor plan']],
+'p-liv':[['1JRxRwDOLYJ2iVAuoFPJt7UwoGriAyiyK','Living room'],['1aPwA9k21LgSvdx98dj7BTm6wlu4AhwfN','Living room'],['1ojcXU5krNLW9XILttOa0vJA7R6grvGmF','Living room']],
+'p-din':[['10jlvidNM8iuhAqKnYX6dOg5KoUPrnVss','Dining'],['1_3G9WQhlMB5FHvz-orQ71AALe4a20l9A','Open kitchen'],['1s7gcg_nsmNYTm8_D9VaoqQQSf780pn2o','Dining & kitchen']],
+'p-mas':[['1sYtsFWYD-simeWlX652mT3_QJzvfYabP','Master bedroom'],['1ve_TrvczqyGf-ndCjbJyoqJqyMvVqFhq','Master bathroom']],
+'p-rec':[['1-nPSPndPf0TxMHoh-pLdm9Gpeu_DqqIg','Reception'],['1pQl2KPoeRtvHTb7Nq_W1XTdeREXi0va6','Reception']],
+'p-kid':[['159DLWG37ViyVAMht_sz6oKvOSsphih_P'],['1cGgDFjZVSaYn8SA9-9Z6m2TI3_yP54Zg'],['1in5G7ydIjswjG5XbRsz_dRvGEI5warxk'],['1qF72DlnO7OFf02A6C2gjzfbCi32jbZrr'],['1zGJBYqIxORte3VISTQaSCmni4v8w9Q3t']].map((x,i)=>[x[0],'Kids’ shop — render '+(i+1)]),
+'p-twin':[['136CqXBV8E4rugSc5BIRVmFrE3mgK3Hkq','Twin bedroom'],['1elb4KFYnf0Kb7DCEZ38udAOu5Kr8vVNW','Twin bedroom']]};
+for(const k in S){const el=document.getElementById(k);const plan=k==='p-plan';
+const odd=S[k].length%2===1&&S[k].length>1&&!el.classList.contains('g1');el.innerHTML=S[k].map(([id,c],i)=>{const src=IMG[id]||T(id);
+return `<figure class="fig${odd&&i===0?' lead':''}"><div class="ph${plan?' plan':''}"><i>${c}</i><img src="${src}" alt="${c}" loading="lazy" referrerpolicy="no-referrer" onload="this.parentNode.classList.add('ok')" onerror="this.remove()"></div><figcaption><span>${String(i+1).padStart(2,'0')} — ${c}</span></figcaption></figure>`}).join('')}
+</script></body></html>
